@@ -1,15 +1,19 @@
-.DEFAULT_GOAL=paper-airplane
+.DEFAULT_GOAL=bot
 
-BUILD=paper-airplane.exe
+BUILD=bot-486.exe
 
-paper-airplane:
+bot:
 	go build -o $(BUILD) .
 
-run: paper-airplane
+run: bot
 	./$(BUILD)
+
+release-linux-amd64:
+	GOARCH=amd64 GOOS=linux go build -o build/$(BUILD) .
 
 clean:
 	rm -rf ./log
+	rm -rf ./build
 	rm -rf $(BUILD)
 
-.PHONY: run paper-airplane
+.PHONY: run bot

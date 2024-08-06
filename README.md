@@ -20,7 +20,7 @@ _✨ 基于 QQ 官方 SDK 开发的 QQBot ✨_
 
 需将 `config.example.yaml` 改名为 `config.yaml` 并填入相关信息
 
-若 `export AIRP_MODE=release` 则脱离沙箱环境
+若 `export SUBARU_MODE=release` 则脱离沙箱环境
 
 ## Features
 

@@ -21,7 +21,7 @@ func Init() {
 	generalLevel := zap.LevelEnablerFunc(func(lev zapcore.Level) bool {
 		return lev >= zap.DebugLevel
 	})
-	if os.Getenv("AIRP_MODE") == "release" {
+	if os.Getenv("SUBARU_MODE") == "release" {
 		encoderConf = zap.NewProductionEncoderConfig()
 		generalLevel = zap.LevelEnablerFunc(func(lev zapcore.Level) bool {
 			return lev >= zap.InfoLevel
