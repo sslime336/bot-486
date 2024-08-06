@@ -1,0 +1,12 @@
+bot:
+  uin: 111 # 机器人QQ号
+  appId: 111
+  token: abc
+  secret: abc
+
+database:
+  sqlite:
+    path: session.db
+
+log:
+  path: ./log/
